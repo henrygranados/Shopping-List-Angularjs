@@ -10,4 +10,4 @@ This application shows a good understanding of how Controllers and Services work
 2. Number of "pending items" to be completed shows up right below Shopping List title.
 2. After marking an item as completed user can click on the "Show complete" field and see the list of items that have been completed.
 
-**Live Demo could be found at** http://henrygranados.github.io/angular_2.html
+**Live Demo could be found at:** http://henrygranados.github.io/angular_2.html
