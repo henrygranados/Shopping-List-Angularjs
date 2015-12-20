@@ -1,0 +1,30 @@
+{
+	"user": "Henry",
+	"items": [
+	{ 
+	 "action": "Buy groceries",
+	 "done": false ,
+	 "remove" : false
+	},
+	{ 
+	  "action": "Buy pants", 
+	  "done": false ,
+	  "remove" : false
+	},
+	{ 
+	  "action": "Buy movie tickets",
+	  "done": false , 
+	  "remove" : false
+	},
+	{ 
+	  "action": "Buy razor",
+	  "done": false , 
+	  "remove" : false
+	},
+	{ 
+	  "action": "Get new tires", 
+	  "done": false , 
+	  "remove" : false
+	}
+	]
+}
