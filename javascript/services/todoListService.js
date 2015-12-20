@@ -1,6 +1,10 @@
 /***** SERVICES ********/
+(function () {
+    'use strict';
 
-todoApp.factory('todoListService', ['$http', function($http) { 
+angular
+.module("App")
+.factory('todoListService', ['$http', function($http) { 
 	return $http.get('javascript/partials/jsonData.json') 
 	.success(function(data) { 
 		return data; 
@@ -9,3 +13,4 @@ todoApp.factory('todoListService', ['$http', function($http) {
 		return err; 
 	}); 
 }]);
+})();
