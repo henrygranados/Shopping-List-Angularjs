@@ -3,8 +3,8 @@
 	'use strict';
 
 	angular
-		.module("App")
-		.controller('MainController', ['$scope', 'todoListService', function($scope, todoListService) {
+	.module("App")
+	.controller('MainController', ['$scope', 'todoListService', function($scope, todoListService) {
 		todoListService.success(function(data) {
 			$scope.todo = data;
 
@@ -38,19 +38,25 @@
 				}
 			}
 
-			$scope.removeItem = function(index){
-
-				angular.forEach($scope.todo.items, function(value, key) {
-					if (value.action == index){
-						$scope.todo.items.splice(key, 1);
+			$scope.pressed = function($event,item) {
+				if ($event.which === 13){
+					$scope.addNewItem(item);
 					}
-				});
-			};
-		});
-	}])
+			}
+
+		    $scope.removeItem = function(index){
+
+						angular.forEach($scope.todo.items, function(value, key) {
+							if (value.action == index){
+								$scope.todo.items.splice(key, 1);
+							}
+						});
+					};
+			});
+}])
 
 
-    .filter("checkedItems", function () {
+.filter("checkedItems", function () {
 	return function (items, showComplete) {
 		var resultArr = [];
 		angular.forEach(items, function (item) {
